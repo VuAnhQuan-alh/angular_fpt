@@ -1,0 +1,25 @@
+<section>
+  <div class="flex justify-between items-center px-5 space-x-10 shadow-lg">
+    <div class="search flex-1 w-92 py-6 text-gray-600">
+      <svg xmlns="http://www.w3.org/2000/svg" (click)="onClick()" class="icon-search cursor-pointer h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+      <input type="text" #searchInput autocomplete="false" class="w-full pl-12 pr-4 py-3 rounded focus:outline-none border border-transparent focus:border-gray-300" />
+    </div>
+    <div class="flex items-center space-x-2">
+      <div class="bg-gray-100 w-12 h-12 rounded-full flex justify-center items-center">
+        <img src="https://i.pinimg.com/564x/e0/db/fc/e0dbfc485f07fba3ce0350f24b0a05be.jpg" class="w-8 rounded" alt="">
+      </div>
+      <div class="bg-gray-100 w-12 h-12 rounded-full flex justify-center items-center text-gray-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+        </svg>
+      </div>
+      <div
+          class="bg-contain bg-center h-12 w-12 rounded-full"
+          style="background-image: url(https://wx4.sinaimg.cn/mw690/005xscasgy1gss2zcu385j32c03407wi.jpg);"
+        ></div>
+    </div>
+  </div>
+  <div class="font-medium text-3xl text-gray-800 my-8">Create a new product</div>
+</section>

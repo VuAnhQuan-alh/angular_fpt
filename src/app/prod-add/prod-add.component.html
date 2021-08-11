@@ -1,0 +1,29 @@
+<form>
+  <div class="max-w-md flex flex-col">
+    <input
+      type="text"
+      class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-green-400"
+      placeholder="Product Name"
+      [(ngModel)]="product.title"
+      name="title"
+    />
+    <input
+      type="text"
+      class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-green-400"
+      placeholder="$ 0.00"
+      [(ngModel)]="product.price"
+      name="price"
+    />
+    <select [(ngModel)]="cateSelect" name="categories" *ngIf="categories.length > 0">
+      <option *ngFor="let cate of categories;" [value]="cate?.id">{{cate?.name}}</option>
+    </select>
+    <textarea
+      class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-green-400"
+      [(ngModel)]="product.description"
+      name="description"
+      placeholder="Write something awesome..."
+    ></textarea>
+  </div>
+  <div></div>
+  <button type="button" (click)="onAdd()" class="btn btn-primary">Create</button>
+</form>

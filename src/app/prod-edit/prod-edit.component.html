@@ -1,0 +1,50 @@
+<p>prod-edit works!</p>
+<form>
+  <div class="mb-3">
+    <label for="inputTitle" class="form-label">Title</label>
+    <input
+      type="text"
+      class="form-control" id="inputTitle"
+      [(ngModel)]="product.title"
+      name="title"
+      aria-describedby="textHelp"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="inputPrice" class="form-label">Price</label>
+    <input 
+      type="number"
+      [(ngModel)]="product.price"
+      name="price"
+      class="form-control"
+      id="inputPrice"
+      aria-describedby="numberHelp"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="inputImage" class="form-label">Image</label>
+    <input
+      type="text"
+      [(ngModel)]="product.image"
+      name="image"
+      class="form-control"
+      id="inputImage"
+      aria-describedby="textHelp"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="textDesc" class="form-label">Description</label>
+    <div class="form-floating">
+      <textarea
+        class="form-control"
+        [(ngModel)]="product.description"
+        name="description"
+        placeholder="Leave a comment here"
+        id="floatingTextarea2"
+        style="height: 100px"
+      ></textarea>
+      <label for="floatingTextarea2">Comments</label>
+    </div>
+  </div>
+  <button type="button" (click)="onUpdate()" class="btn btn-primary">Submit</button>
+</form>

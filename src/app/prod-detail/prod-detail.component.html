@@ -1,0 +1,13 @@
+<p>prod-detail works!</p>
+<div class="d-flex justify-content-between">
+  <img src={{product?.image}} width="250px" class="img-fluid" alt="...">
+  <div class="card ms-5">
+    <h5 class="card-header">Product detail</h5>
+    <div class="card-body mx-3">
+      <h3 class="card-title">{{product?.title}}</h3>
+      <h2>{{product?.price}}</h2>
+      <p class="card-text">{{product?.description}}</p>
+      <a href="/home" class="btn btn-primary">Add to cart</a>
+    </div>
+  </div>
+</div>

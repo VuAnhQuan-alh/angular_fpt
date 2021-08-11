@@ -1,0 +1,57 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "title": "The Hoodie",
+      "price": 120,
+      "description": "girl duawf",
+      "category": "category",
+      "image": "https://wx1.sinaimg.cn/mw690/005xscasgy1gt655t4b02j32c0340qv7.jpg"
+    },
+    {
+      "id": 3,
+      "title": "The Black Vest ",
+      "price": 234,
+      "description": "girl friend",
+      "category": "woman",
+      "image": "https://wx2.sinaimg.cn/mw690/005xscasgy1gsz6fdrn8bj32c0340kjl.jpg"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "T-shirts"
+    },
+    {
+      "id": 2,
+      "name": "Shirts"
+    },
+    {
+      "id": 3,
+      "name": "Jeans"
+    },
+    {
+      "id": 4,
+      "name": "Leather"
+    }
+  ],
+  "book": [
+    {
+      "id": 1,
+      "title":"The Hoodie",
+      "price": 82,
+      "desc": "Lorem abc",
+      "author": "Updating"
+    }
+  ],
+  "data": [
+    {
+      "id": 1,
+      "title": "The Hoodie",
+      "price": 98,
+      "img": "https://wx1.sinaimg.cn/mw690/005xscasgy1gt655t4b02j32c0340qv7.jpg",
+      "desc": "Lorem abc",
+      "author": "Alex"
+    }
+  ]
+}
